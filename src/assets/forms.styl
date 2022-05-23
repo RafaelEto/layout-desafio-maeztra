@@ -1,0 +1,15 @@
+
+$input
+    height: 40px
+    padding: 0 24px
+    line-height: 40px
+
+input
+    &[type=text], &[type=password], &[type=email], &[type=tel]
+        @extend $input
+
+    &:focus::placeholder
+        color: transparent
+
+textarea
+    padding: 15px

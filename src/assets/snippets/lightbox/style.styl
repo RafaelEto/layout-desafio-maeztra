@@ -1,0 +1,138 @@
+body.show-lightbox
+    overflow: hidden
+
+    .lightbox-newsletter
+        opacity: 1
+        visibility: visible
+
+        &__mask
+            opacity: 1
+            visibility: visible
+
+.lightbox-newsletter
+    width: 850px;
+    height: 530px;
+    position: fixed;
+    left: 50%;
+    top: 50%
+    transform: translate(-50%, -50%)
+    opacity: 0
+    visibility: hidden
+    z-index 202
+    transition $transition
+
+    &__mask
+        position: fixed
+        width: 100vw
+        height: 100vh
+        top: 0
+        left: 0
+        z-index 201
+        cursor: pointer
+        background rgba(0, 0, 0, .7)
+        opacity: 0
+        visibility: hidden
+        transition $transition
+
+    &__container
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative
+        background: #fff
+
+    &__close
+        position: absolute;
+        right: 0;
+        bottom: calc(100% + 6px);
+        font-family: 'Lato', sans-serif
+        font-size: 12px
+        font-weight: 400
+        color: #fff
+        cursor: pointer
+
+    &__image
+        img
+            display: block
+
+    &__content
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding 45px 20px 24px
+
+    &__icon
+        display: flex
+        margin-bottom: 13px
+
+    &__welcome
+        font-size: 12px
+        font-weight: 400
+        color: #464B54
+        line-height: 20px
+        margin-bottom: 13px
+
+    &__title
+        font-size: 20px
+        font-weight: 400
+        color: #787D83
+        line-height: 24px
+        margin-bottom: 25px
+        text-align: center
+
+        strong
+            font-family: 'Lato', sans-serif
+
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+
+    &__input
+        width: 100%
+        border-radius: 10px
+        border 1px solid #C4C4C4
+        background #fff
+        height: 40px
+        padding 0 15px !important
+        margin-bottom: 12.5px
+
+        &::placeholder
+            font-size: 12px
+            font-weight: 400
+            color: #787D83
+
+    &__button
+        width: 100%
+        height: 40px
+        background: $color
+        border-radius: 10px
+        border: none
+        font-size: 12px
+        font-weight: 700
+        color: #fff
+        cursor: pointer
+        transition $transition
+        display: flex
+        justify-content: center
+        align-items: center
+
+        svg
+            margin-left: 8px
+
+        &:hover
+            background #353535
+
+@media $mobile
+    .lightbox-newsletter
+        width: 300px
+        height: 307px
+
+        &__image
+            display: none
+            
+        &__title
+            font-size: 16px
+            padding 0 5px

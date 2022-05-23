@@ -1,0 +1,43 @@
+.brands
+    margin-top: 74px
+
+    &__title
+        font-size: 32px
+        font-weight: 700
+        color: #353535
+        line-height: 49px
+        text-align: center
+        margin-bottom: 17px
+
+    &__list
+        &:not(.slick-initialized)
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin 0 -7.5px
+
+    &__item
+        margin 0 7.5px
+
+    &__img
+        display: block
+        border-radius: 4px
+
+@media $mobile
+    .brands
+        margin 40px 0 0 30px
+
+        &__title
+            font-size: 24px
+            line-height: 37px
+            margin-bottom: 25px
+            margin-right: 30px
+
+        &__list
+            margin 0 -37.5px
+            .slick-list
+                padding-left: 0 !important
+
+        &__item
+            border-radius: 4px
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16)

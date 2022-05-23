@@ -1,0 +1,82 @@
+.newsletter
+    border-top: 2px solid #EFEFEF
+    border-bottom: 2px solid #EFEFEF
+
+    &__container
+        max-width: 950px
+        margin: 0 auto
+        padding 40px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__title
+        font-size: 24px
+        font-weight: 700
+        color: #000000
+        line-height: 38px
+
+    &__box
+        position: relative
+        max-width: 630px
+        width: 100%
+
+    &__input
+        width: 100%
+        border-radius: 4px
+        border 1px solid #353535
+        background #fff
+        height: 40px
+
+        &::placeholder
+            font-size: 14px
+            font-weight: 400
+            color: #353535
+
+    &__button
+        width: 130px
+        height: 100%
+        position: absolute
+        top: 0
+        right 0
+        background: $color
+        border-radius: 4px
+        border: none
+        font-size: 16px
+        font-weight: 700
+        color: #fff
+        cursor: pointer
+        transition $transition
+
+        &:hover
+            background #353535
+
+@media $mobile
+    .newsletter
+        &__container
+            padding 24px 31px
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+
+        &__title 
+            margin-bottom: 8px
+
+        &__box
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        &__input
+            height: 26px !important
+            width: 100%;
+            margin-right: 15px;
+
+        &__button
+            position: static;
+            top: auto;
+            right: auto;
+            min-width: 80px;
+            width: auto;
+            height: 26px;
+            font-size: 14px

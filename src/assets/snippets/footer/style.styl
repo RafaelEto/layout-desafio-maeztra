@@ -1,0 +1,143 @@
+.footer
+    padding-top: 80px
+    background: #fafafa
+
+    &__container
+        max-width: 950px
+        margin: 0 auto
+        padding 40px 0 64px
+
+    &__row
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    &__title
+        font-size: 16px
+        font-weight: 700
+        color: #353535
+        line-height: 18px
+        margin-bottom: 25px
+
+    &__link
+        display: block
+        font-size: 12px
+        font-weight: 400
+        color: #000
+        transition $transition
+
+        &:not(:last-child)
+            margin-bottom: 24px
+        
+        &:hover
+            color $color
+
+    &__bottom
+        background: #353535
+        padding 20px 0 15px
+
+        &--container
+            max-width: 1600px
+            margin: 0 auto
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        .socials
+            &__list
+                display: flex
+                justify-content: flex-start
+                align-items: center
+
+            &__link
+                display: flex
+
+                &:not(:last-child)
+                    margin-right: 22px
+
+                svg
+                    fill #fff
+                    transition $transition
+
+                &:hover
+                    svg
+                        fill $color
+
+        .payment
+            &__list
+                display: flex
+                justify-content: center
+                align-items: center
+            
+            &__item
+                display: flex
+
+                &:not(:last-child)
+                    margin-right: 22px
+
+        .copyright
+            &__list
+                display: flex
+                justify-content: flex-end
+                align-items: flex-start
+
+            &__item
+                &.vtex
+                    margin-right: 22px
+
+            &__title
+                font-size: 10px
+                font-weight: 400
+                color: #fff
+                line-height: 17px
+                margin-bottom: 3px
+
+@media $mobile
+    .footer
+        padding-top: 40px
+
+        &__container
+            padding 40px 0 57px
+
+        &__row
+            display: block
+            margin: 0 31px
+
+        &__block
+            &:not(:last-child)
+                margin-bottom: 17px
+
+        &__title
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 0
+
+            &:after
+                content: '+'
+
+            &.less
+                &:after
+                    content: '-'
+
+        &__list
+            padding-top: 15px
+
+        &__bottom
+            padding 24px 0 32px
+            &--container
+                flex-direction: column
+
+            .socials
+                margin-bottom: 35px
+
+                &__item
+                    &:not(:last-child)
+                        margin-right: 24px
+
+            .payment
+                margin-bottom: 35px
+
+                &__item
+                    &:not(:last-child)
+                        margin-right: 24px

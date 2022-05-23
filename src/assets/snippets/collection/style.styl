@@ -1,0 +1,51 @@
+.collection
+    margin-top: 65px
+
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__text
+        width: 420px
+
+    &__title 
+        font-size: 24px
+        font-weight: 700
+        color: #000
+        line-height: 37px
+        margin-bottom: 16px
+
+    &__description
+        font-size: 14px
+        font-weight: 400
+        color: #000000
+        line-height: 22px
+        text-align: left
+
+    &__image
+        img
+            display: block
+
+@media $mobile
+    .collection
+        margin-top: 10px
+
+        &__container
+            flex-direction: column
+
+        &__text
+            width: auto
+            margin-bottom: 24px
+
+        &__description
+            height: 176px
+            text-align left
+            text-overflow ellipsis
+            max-width 100%
+            display block
+            display -webkit-box
+            overflow hidden
+            transition transition
+            -webkit-line-clamp 8
+            -webkit-box-orient vertical

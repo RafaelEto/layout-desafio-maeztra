@@ -1,0 +1,43 @@
+.menu
+    box-shadow inset 0 4px 6px rgba(0, 0, 0, .16)
+    &__container
+        max-width: 1220px;
+        margin: 0 auto;
+
+    &__list
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    &__item
+        width: 150px
+    
+    &__link
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 48px;
+
+    &__icon
+        display: flex;
+        margin-right: 9.75px;
+    
+    &__name
+        font-size: 14px;
+        font-weight: 400;
+        color: #353535
+        line-height: 20px;
+        transition $transition
+        
+        &:hover
+            color $color
+            font-weight: 700
+
+@media screen and (max-width: 1300px)
+    .menu
+        &__container
+            margin 0 20px
+
+@media $mobile
+    .menu
+        display: none

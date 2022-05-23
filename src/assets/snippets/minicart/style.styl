@@ -1,0 +1,39 @@
+.minicart
+    padding 12px 14px 12px 17px
+    border-radius: 8px
+    border 1px solid $color
+
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__icon
+        margin-right: 8px
+        display: flex
+        svg
+            fill #353535
+            transition $transition
+            width: 15px
+            height: 16px
+
+    &__title
+        font-size: 14px
+        font-weight: 400
+        color: #353535
+        line-height: 20px
+        transition $transition
+
+@media $mobile
+    .minicart
+        padding: 0
+        border-radius: 0
+        border: none
+
+        &__icon
+            svg
+                width: auto
+                height: auto
+
+        &__title
+            display: none
