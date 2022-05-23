@@ -17,3 +17,18 @@
 
     &__img
         display: block
+
+@media $mobile
+    .banner
+        &__item
+            height: 320px;
+            position: relative;
+            overflow: hidden;
+
+        &__img
+            max-height: 320px;
+            min-width: fit-content;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-34%);
+            top: 0;
