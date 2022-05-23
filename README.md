@@ -9,12 +9,12 @@ Foram utilizadas as tecnologias:
 - jQuery
 - Gulp
 
-***Necessario:***
+### ***Para visualizar o layout, basta abrir o /public/index.html***
+
+***Necessário para desenvolvimento:***
 - Node v10+
 - Gulp 4.0
 
-***Para instalar dependencias:***
+***Para instalar e executar dependencias de desenvolvimento:***
 - npm i / npm install
-
-***Para executar:***
 - npm start
